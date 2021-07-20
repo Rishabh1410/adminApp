@@ -20,7 +20,7 @@ class _Pat_listState extends State<Pat_list> {
   Future<dynamic> get_list() async {
     Map data = {"clinic_id": "1234"};
     http.Response response = await http.post(
-        'http://54.87.169.52:5000/patient_clinic_details',
+        'http://54.162.56.164:5000/patient_clinic_details',
         body: jsonEncode(data),
         headers: {"content-type": "application/json"});
     // if (response.statusCode == 201) {
@@ -165,7 +165,7 @@ class _Pat_listState extends State<Pat_list> {
                       },
                       title: Padding(
                         padding: const EdgeInsets.only(left: 8),
-                        child: Text('${snapshot.data[index][9]}'),
+                        child: Text('${snapshot.data[index][7]}'),
                       ),
                       subtitle: Padding(
                         padding: const EdgeInsets.only(left: 8.0),

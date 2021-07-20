@@ -21,7 +21,7 @@ class _login_pageState extends State<login_page> {
   Future<String> authentication(dynamic phone_num) async {
     Map<String, dynamic> post_data = {'phone_number': '$phone_num'};
     http.Response check = await http.post(
-        'http://54.87.169.52:5000/getAdminDetails',
+        'http://54.162.56.164:5000/getAdminDetails',
         body: jsonEncode(post_data),
         headers: {
           "content-type": "application/json",

@@ -41,7 +41,7 @@ class _Bank_detailsState extends State<Bank_details> {
 
   Future<void> create_post(Map<String, dynamic> data) async {
     http.Response response = await http.post(
-        'http://54.87.169.52:5000/create_profile',
+        'http://54.162.56.164:5000/create_profile',
         body: jsonEncode(data),
         headers: {"content-type": "application/json"});
     if (response.statusCode == 201) {

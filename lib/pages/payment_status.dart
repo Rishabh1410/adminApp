@@ -16,10 +16,10 @@ class _payment_statusState extends State<payment_status> {
     Map<String, dynamic> post_data = {
       "clinic_id": "12345",
       "patient_id": "${pat_data['patient_Id']}",
-      "doctor_id": "5437"
+      "doctor_id": "9026"
     };
     http.Response token_data = await http.post(
-        'http://54.87.169.52:5000/token_admin',
+        'http://54.162.56.164:5000/token_admin',
         body: jsonEncode(post_data),
         headers: {
           "content-type": "application/json",
